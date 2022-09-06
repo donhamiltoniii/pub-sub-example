@@ -1,7 +1,5 @@
-import { on, trigger } from "./events";
+import { View } from "./view";
 
-on("change", () => {
-  console.log("change occurred");
-});
+const app = document.querySelector("#app");
 
-trigger("change");
+new View(app!).render();
